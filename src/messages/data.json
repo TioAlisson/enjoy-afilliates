@@ -1,0 +1,24 @@
+{
+    "InfoSignup": [
+        {
+            "src": "@/app/assets/icon/enjoy-logo-icon.svg",
+            "alt": "Icon Enjoy",
+            "title": "Ganhe comissão por vendas de ingressos usando seu link"
+        },
+        {
+            "src": "../../assets/icon/enjoy-logo-icon.svg",
+            "alt": "Icon Enjoy",
+            "title": "Obtenha um link exclusivo para cada evento para compartilhar"
+        },
+        {
+            "src": "../../assets/icon/enjoy-logo-icon.svg",
+            "alt": "Icon Enjoy",
+            "title": "Pagamentos de comissão fáceis diretamente para sua conta bancária"
+        },
+        {
+            "src": "../../assets/icon/enjoy-logo-icon.svg",
+            "alt": "Icon Enjoy",
+            "title": "Pagamentos feitos uma vez por mês, todo dia 8 do mês"
+        }
+    ]
+}
