@@ -20,5 +20,41 @@
             "alt": "Icon Enjoy",
             "title": "Pagamentos feitos uma vez por mês, todo dia 8 do mês"
         }
-    ]
+    ],
+    "InfoSignupInput": {
+        "inputFields": [
+            {
+                "label": "First Name",
+                "htmlFor": "firstName",
+                "id": "firstName",
+                "type": "text"
+            },
+            {
+                "label": "Last Name",
+                "htmlFor": "lastName",
+                "id": "lastName",
+                "type": "text"
+            }
+        ],
+        "otherFields": [
+            {
+                "label": "Email",
+                "htmlFor": "email",
+                "id": "email",
+                "type": "email"
+            },
+            {
+                "label": "Password",
+                "htmlFor": "password",
+                "id": "password",
+                "type": "password"
+            },
+            {
+                "label": "Confirm Password",
+                "htmlFor": "confirmPassword",
+                "id": "confirmPassword",
+                "type": "password"
+            }
+        ]
+    }
 }

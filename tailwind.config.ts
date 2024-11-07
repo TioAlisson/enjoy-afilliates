@@ -13,9 +13,10 @@ const config: Config = {
 			"enjoytix-container": "1240px"
 		},
 		screens: {
-			'xm': '420px',
+			'xm': '410px',
 		  },
   		colors: {
+			"primary-color": "#C3001B",
   			background: 'hsl(var(--background))',
   			foreground: 'hsl(var(--foreground))',
   			card: {
@@ -64,6 +65,5 @@ const config: Config = {
   		}
   	}
   },
-  plugins: [require("tailwindcss-animate")],
 };
 export default config;
