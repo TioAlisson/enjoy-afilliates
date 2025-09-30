@@ -10,10 +10,11 @@ const config: Config = {
   theme: {
   	extend: {
 		maxWidth: {
-			"enjoytix-container": "1240px"
+			"enjoytix-container": "1240px",
+			"xl": "720px"
 		},
 		screens: {
-			'xm': '410px',
+			'xm': '405px',
 		  },
   		colors: {
 			"primary-color": "#C3001B",

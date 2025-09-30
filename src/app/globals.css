@@ -108,6 +108,24 @@ button {
 .form-select:focus { border-color: none; outline: none; box-shadow: none; border: none; }
 
 
+.custom-scrollbar::-webkit-scrollbar { width: 2px; height: 8px; }
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  -webkit-border-radius: 0px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  -webkit-border-radius: 10px;
+  border-radius: 0px;
+  background: #999;
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb:window-inactive {
+  background: #999;
+}
+
 .color-animation {
   animation: colorChange 6s infinite alternate;
 }
@@ -133,8 +151,8 @@ screen and (max-width: 700px) {
   .img-login {
     background-image: url('../public/assets/img/img-bg-mobile.jpg');
   }
-  .container {
-    padding-inline: 32px;
+  .container, .max-w-xl {
+    padding-inline: 18px;
   }
 }
 
@@ -146,4 +164,47 @@ screen and (max-width: 700px) {
   header nav {
     padding-top: 2.5px !important;
   }
+}
+
+.menu {
+  position: absolute;
+  top: 0;
+  right: 0;  
+  background-color: white;
+  padding: 1.5rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  z-index: 40;
+  width: 65%;  
+  opacity: 0;   
+  visibility: hidden;  
+  transform: translateX(100%);  
+  transition: transform 0.5s ease, opacity 0.5s ease, visibility 0s 0.5s;  
+}
+
+.menuOpen {
+  opacity: 1;  
+  visibility: visible;  
+  transform: translateX(0);  
+  transition: transform 0.5s ease, opacity 0.5s ease, visibility 0s;  
+}
+
+.menuClosed {
+  opacity: 0; 
+  visibility: hidden;  
+  transform: translateX(100%); 
+  transition: transform 0.5s ease, opacity 0.5s ease, visibility 0s 0.5s;  
+}
+
+.input-profile[type="date"]::-webkit-calendar-picker-indicator {
+  /* display: none;
+  -webkit-appearance: none; */
+  display: flex;
+  width: 15px;
+  
+  position: absolute;
+  right: 10px;
+}
+
+.input-profile[type="date"] {
+  position: relative;
 }

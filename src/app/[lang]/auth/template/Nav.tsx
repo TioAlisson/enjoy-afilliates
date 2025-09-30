@@ -10,7 +10,7 @@ import Link from "next/link";
 
 export function Nav({ dict }: NavProps) {
     return (
-        <nav className="container mx-auto grid grid-cols-12 h-full items-center px-4 pb-6 mt-6 md:mt-0 sm:pt-0 lg:pb-4 lg:mt-4 2xl:pt-6 2xl:pb-16 2xl:mt-0">
+        <nav className="container mx-auto grid grid-cols-12 items-center px-4 pb-6 mt-6 md:mt-0 sm:pt-0 lg:pb-4 lg:mt-4 2xl:pt-6 2xl:pb-16 2xl:mt-0">
             <div className="col-span-6 lg:col-span-4">
                 <Link href="/" className="">
                     <Image

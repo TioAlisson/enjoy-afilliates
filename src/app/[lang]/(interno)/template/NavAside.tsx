@@ -1,9 +1,9 @@
-"use client";
+'use client';
 
+import { usePathname } from 'next/navigation';
 import LogoEnjoy from "@/public/assets/img/logo-red-enjoytix.png";
 import Image from "next/image";
 import Link from "next/link";
-import { usePathname } from "next/navigation";
 
 type Language = 'pt-BR' | 'en-US';
 
@@ -33,35 +33,44 @@ const links: Record<Language, Link[]> = {
 
 export default function NavAside() {
   const pathname = usePathname();
-  const language = (pathname.split('/')[1] as Language) || 'en-US';
 
+  const language = (pathname?.split('/')[1] as Language) || 'en-US';
+  const normalizedPathname = pathname?.replace(`/${language}`, '') || '';
   const selectedLinks = links[language];
 
   return (
-    <nav className="flex justify-between flex-row lg:flex-col">
+    <nav className="flex justify-between xl:flex-col w-full">
       <div className="flex flex-col items-center justify-center">
         <Image
           src={LogoEnjoy}
           alt="Logo Enjoy"
-          className="mt-20 px-6 w-64"
+          className="mt-24 lg:mt-20 px-6 w-72"
         />
+        <span className="font-semibold text-primary-color mb-5 xl:mb-0">INFLUENCER PROGRAM</span>
       </div>
-      <div className="hidden lg:flex items-center gap-4 my-6 py-6 px-2 border-t-2 border-b-2">
-        <div className="bg-green-900 w-16 h-16 flex justify-center items-center rounded-full">
-          <span className="text-white text-2xl">A</span>
+      <div className="hidden xl:flex items-center gap-4 my-6 py-6 px-2 border-t-2 border-b-2">
+        <div className="bg-primary-color w-16 h-16 flex justify-center items-center rounded-full">
+          <span className="text-white text-3xl">A</span>
         </div>
         <div>
           <h2 className="text-xl py-1">Jonatan</h2>
-          <p className="text-base">Jonatan@teste.com</p>
+          <p className="text-base">Jonatan@teste</p>
         </div>
       </div>
+      <div className="hidden md:flex flex-row items-center justify-start xl:flex-col xl:items-start gap-6 text-lg m-6 mt-24 lg:mt-20 xl:mt-0">
+        {selectedLinks.map((link, index) => {
+          const isActive = normalizedPathname === link.href;
 
-      <div className="text-lg m-6 hidden md:flex justify-start flex-row lg:flex-col gap-4 mt-24 lg:mt-6">
-        {selectedLinks.map((link, index) => (
-          <Link key={index} href={link.href} className="text-zinc-800 hover:text-primary-color font-semibold">
-            {link.name}
-          </Link>
-        ))}
+          return (
+            <Link
+              key={index}
+              href={link.href}
+              className={`text-zinc-800 hover:text-primary-color font-bold text-base ${isActive ? "!text-primary-color" : ""}`}
+            >
+              {link.name}
+            </Link>
+          );
+        })}
       </div>
     </nav>
   );

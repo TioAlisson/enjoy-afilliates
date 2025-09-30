@@ -2,7 +2,7 @@ export const ptBR = {
     signin: {
         banner: "Esta plataforma é o ambiente de teste Enjoy.",
         nav: "PROGRAMA INFLUENCIADOR",
-        textEnjo: "De reggaeton e funk a seminários e eventos de networking. EnjoyTix coloca seu evento na frente de seus clientes.",
+        textEnjoy: "De reggaeton e funk a seminários e eventos de networking. EnjoyTix coloca seu evento na frente de seus clientes.",
         newUser: "Novo usuário?",
         newAccount: "Criar uma nova conta",
         email: "Endereço de e-mail",
@@ -139,10 +139,45 @@ export const ptBR = {
         general2: "Esta política será regida e interpretada de acordo com as leis da Inglaterra e País de Gales, e você concorda em se submeter à jurisdição exclusiva dos tribunais ingleses.",
         general3: "Podemos alterar os termos desta política periodicamente. Você é responsável por revisar regularmente esta política para estar ciente de quaisquer alterações. Se continuar a usar nosso site após a data em que as alterações entrarem em vigor, você aceitará as alterações."
     },
-    nav: {
-        home: "Início",
-        profile: "Perfil",
-        settings: "Configurações",
-        logout: "Sair"
+    dashboard: {
+        date: "1º de novembro de 2024 - 30 de novembro de 2024",
+        clicks: "Cliques",
+        tickets: "Ingressos Vendidos",
+        earnings: "Ganhos",
+        events: "Eventos",
+        status: "Status",
+        commissions: "Commissões"
+    },
+    changePassword: {
+        changePassword: "Alterar senha",
+        password: "Senha",
+        newPassword: "Nova senha",
+        confirmNewPassword: "Confirmar nova senha",
+        btnSave: "Salvar"
+    },
+    paymentHistory: {
+        Payments: "Pagamentos",
+        bankDetails: "Detalhes do Banco",
+        balance: "Saldo Total"
+    },
+    profile: {
+        influencerProfile: "Meu Perfil de Influenciador",
+        createProfile: "Crie seu perfil",
+        firstName: "Nome",
+        lastName: "Sobrenome",
+        dateOfBirth: "Data de nascimento",
+        mobileNumber: "Número de celular",
+        country: "País",
+        city: "Cidade",
+        preferredLanguage: "Preferência de Idioma",
+        influencerCode: "Código de Influenciador",
+        socialAccount: "Conecte sua conta social",
+        btnSave: "Salvar Alterações"
+    },
+    events: {
+        titleEvent: "Eventos",
+        placeholderEvent: "Encontre seus eventos favoritos",
+        yourLink: "Copiar seu link",
+        state: "Encerrado"
     }
 }

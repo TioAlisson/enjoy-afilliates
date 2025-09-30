@@ -139,10 +139,45 @@ export const enUS = {
         general2: "This policy shZall be governed by and construed in accordance with the law of England and Wales, and you agree to submit to the exclusive jurisdiction of the English Courts.",
         general3: "We may change the terms of this policy from time to time. You are responsible for regularly reviewing this policy so that you are aware of any changes to it. If you continue to use our website after the time we state the changes will take effect, you will have accepted the changes.",
     },
-    nav: {
-        home: "Início",
-        profile: "Perfil",
-        settings: "Configurações",
-        logout: "Sair"
+    dashboard: {
+        date: "November 1, 2024 - November 30, 2024",
+        clicks: "Clicks",
+        tickets: "Tickets Sold",
+        earnings: "Earnings",
+        events: "Events",
+        status: "Status",
+        commissions: "Commissions"
+    },
+    changePassword: {
+        changePassword: "Change Password",
+        password: "Password",
+        newPassword: "New Password",
+        confirmNewPassword: "Confirm new password",
+        btnSave: "Save"
+    },
+    paymentHistory: {
+        Payments: "Payments",
+        bankDetails: "Bank Details",
+        balance: "Total Balance"
+    },
+    profile: {
+        influencerProfile: "My Influencer Profile",
+        createProfile: "Create your profile",
+        firstName: "First Name",
+        lastName: "Last Name",
+        dateOfBirth: "Date of birth",
+        mobileNumber: "Mobile Number",
+        country: "Country",
+        city: "City",
+        preferredLanguage: "Preferred Language",
+        influencerCode: "Influencer Code",
+        socialAccount: "Connect Your Social Account",
+        btnSave: "Save Changes"
+    },
+    events: {
+        titleEvent: "Events",
+        placeholderEvent: "Find your favorite events",
+        yourLink: "Copy your link",
+        state: "Ended"
     }
 };

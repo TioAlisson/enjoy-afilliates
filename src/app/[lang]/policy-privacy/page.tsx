@@ -4,8 +4,9 @@ import { useEffect, useState } from 'react';
 import { getDictionaryServerOnly } from "@/dictionaries/default-dictionaries-server-only";
 import { Locale } from "@/config/i18nConfig";
 import InfoBanner from "../auth/template/InfoBanner";
-import MainPolicyPrivacy from './components/MainPolicyPrivacy';
+
 import { Nav } from '../auth/template/Nav';
+import MainPolicyPrivacy from './components/MainPolicyPrivacy';
 
 
 

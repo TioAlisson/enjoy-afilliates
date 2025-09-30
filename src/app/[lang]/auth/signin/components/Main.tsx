@@ -9,7 +9,7 @@ import FormLogin from "./FormLogin";
 
 export default function Main({ dict }: MainProps) {
     return (
-        <main className="img-login xm:h-[100vh] 2xl:h-[85vh] flex justify-center overflow-x-clip">
+        <main className="img-login xm:h-[85.8vh] md:h-full 2xl:h-[85vh] flex justify-center overflow-x-clip">
             <div className="grid grid-cols-12 items-center gap-8 pt-12 pb-8">
                 <div className="hidden lg:flex lg:col-span-6 justify-end lg:pb-28 ">
                     <div>
