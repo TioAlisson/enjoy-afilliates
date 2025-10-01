@@ -4,8 +4,6 @@ import SectionSignup from "./SectionSignup";
 import { getDictionaryServerOnly } from "@/dictionaries/default-dictionaries-server-only";
 import { Locale } from "@/config/i18nConfig";
 
-
-
 export default function MainSignup({ params }: { params: { lang: Locale } }) {
     const dict = getDictionaryServerOnly(params.lang);
     const infoTexts = [

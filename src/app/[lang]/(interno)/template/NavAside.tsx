@@ -53,8 +53,8 @@ export default function NavAside() {
           <span className="text-white text-3xl">A</span>
         </div>
         <div>
-          <h2 className="text-xl py-1">Jonatan</h2>
-          <p className="text-base">Jonatan@teste</p>
+          <h2 className="text-xl py-1">Alisson Assis</h2>
+          <p className="text-base">alisson@teste</p>
         </div>
       </div>
       <div className="hidden md:flex flex-row items-center justify-start xl:flex-col xl:items-start gap-6 text-lg m-6 mt-24 lg:mt-20 xl:mt-0">

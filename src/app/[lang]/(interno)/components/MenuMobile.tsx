@@ -64,8 +64,8 @@ export default function MenuMobileCustom() {
                                 <span className="text-white text-3xl">A</span>
                             </div>
                             <div className="text-center">
-                                <h2 className="text-xl py-1 text-center">Jonatan Rafael</h2>
-                                <p className="text-[14px] text-center text-muted-foreground">Jonatan@teste</p>
+                                <h2 className="text-xl py-1 text-center">Alisson Assis</h2>
+                                <p className="text-[14px] text-center text-muted-foreground">alisson@teste</p>
                             </div>
                         </div>
                     </Link>
